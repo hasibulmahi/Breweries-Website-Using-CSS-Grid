@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display' serif;
+}
+
+p a {
+    font-family: 'Playfair Display' serif;
+}
+
+a {
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    transition: all .3s;
+}
+
+a:hover {
+    opacity: .6;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Styles for the bar image */
+.bar {
+    background: url(./images/cover-img.jpg) center;
+    background-size: cover;
+    padding: 64px 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+  }
+   
+  .bar > * {
+    color: white;
+  }
+  
+  .bar > h1 {
+    font-size: 64px;
+    padding-bottom: 16px;
+  }
+  
+  .bar > article > p {
+    font-size: 24px;
+    font-weight: 200;
+  }
+  
+  .bar > article > a {
+    padding: 16px;
+    margin-top: 12px;
+  }
+  
+  /* breweries styles */
+  .breweries {
+    padding: 32px;
+  }
+  
+  .breweries > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 16px;
+  }
+  
+  .breweries > ul > li {
+    border: 1px solid #E2E2E2;
+    border-radius: 8px;
+  }
+  
+  .breweries > ul > li > figure {
+    max-height: 220px;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+  }
+  
+  .breweries > ul > li > figure > img {
+    width: 100%;
+  }
+  
+  .breweries > ul > li > figure > figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+  }
+  
+  .breweries > ul > li > figure > figcaption > h3 {
+    color: white;
+    padding: 12px;
+    font-size: 20px;
+  }
+  
+  .breweries > ul > li > p {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 12px;
+    color: #666666;
+  }
+  
+  .breweries > ul > li > a {
+    padding: 8px 16px;
+    margin: 8px;
+  }
+  
+  /* footer */
+  footer {
+    background-color: #333;
+    padding: 12px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+  }
